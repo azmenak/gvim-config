@@ -1,0 +1,28 @@
+"Set the colorscheme to something nice
+color Zenburn
+
+"Make the window background semi-transparent
+set transp=10
+
+"Hide the scollbars, they're ugly.
+set guioptions-=r
+set guioptions-=L
+set guioptions+=c
+
+"Set the vim equivilant to a ruler at 80chars
+set colorcolumn=80
+
+"Save sessions with .vis extension
+map <leader>s :mksession!  session.vis<CR>
+"Automatically source vim sessions so I can open them with the finder
+au BufRead *.vis so %
+
+"Load our custom keymap
+if filereadable(expand("~/.gvim/.gvimrc.keymap"))
+  source ~/.gvimrc.keymap
+endif
+
+"Load small custom functions into vim
+if filereadable(expand("~/.gvim/.gvimrc.functions"))
+  source ~/.gvimrc.functions
+endif

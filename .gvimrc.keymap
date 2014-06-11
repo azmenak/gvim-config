@@ -1,0 +1,8 @@
+"My favourite part of modal interfaces...
+
+"Emulate universal indent/outdent
+vmap <D-]> >gv
+vmap <D-[> <gv
+
+"Allow selection of indentation block
+vmap <Space> :call SelectIndent()<CR>
