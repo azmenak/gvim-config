@@ -26,3 +26,7 @@ endif
 if filereadable(expand("~/.gvim/.gvimrc.functions"))
   source ~/.gvimrc.functions
 endif
+
+"Ingore files chen searching/loading etc.
+"Ingore coffeescript map files
+set wildignore+=*.map
