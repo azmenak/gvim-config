@@ -19,12 +19,12 @@ au BufRead *.vis so %
 
 "Load our custom keymap
 if filereadable(expand("~/.gvim/.gvimrc.keymap"))
-  source ~/.gvimrc.keymap
+  source ~/.gvim/.gvimrc.keymap
 endif
 
 "Load small custom functions into vim
 if filereadable(expand("~/.gvim/.gvimrc.functions"))
-  source ~/.gvimrc.functions
+  source ~/.gvim/.gvimrc.functions
 endif
 
 "Ingore files chen searching/loading etc.
